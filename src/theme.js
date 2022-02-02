@@ -5,6 +5,8 @@ const theme = createTheme({
       fontFamily: ["Lato", "Helvetica", "Arial", "sans-serif"].join(","),
       h1: {
          fontFamily: ["Comforter", "cursive"].join(","),
+         fontSize: "1.6rem",
+         letterSpacing: 4,
       },
       h2: {
          fontFamily: ["Dosis", "sans-serif"].join(","),
