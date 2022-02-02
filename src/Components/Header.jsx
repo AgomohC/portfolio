@@ -67,8 +67,20 @@ const useStyles = makeStyles((theme) => ({
          display: "flex",
       },
    },
-   greenText: {
+   "@keyframes pulse": {
+      "0%": {
+         transform: "Scale(1.1)",
+      },
+      "50%": {
+         transform: "Scale(0.98)",
+      },
+      "100%": {
+         transform: "Scale(1.1)",
+      },
+   },
+   icon: {
       color: theme.palette.secondary.main,
+      animation: "$pulse 1.5s ease-in-out infinite",
    },
 }));
 
@@ -83,7 +95,7 @@ const Header = () => {
             id="back-to-top-anchor"
             component="nav"
          >
-            <Typography variant="h1">Chinaemerem</Typography>
+            <Typography variant="h1">chinaemerem</Typography>
             <Grid container direction="row">
                <Grid
                   item
@@ -95,7 +107,7 @@ const Header = () => {
                      onClick={() => openMenu()}
                      className={classes.hideDesktop}
                   >
-                     <MenuIcon className={classes.greenText} />
+                     <MenuIcon className={classes.icon} />
                   </IconButton>
                   <Grid className={classNames(classes.hdeMobile, classes.flex)}>
                      <a
