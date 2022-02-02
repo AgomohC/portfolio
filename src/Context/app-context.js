@@ -2,7 +2,7 @@ import React, { createContext, useContext, useReducer } from "react";
 import reducer from "./reducer";
 
 const initialState = {
-   isDarkMode: true,
+   isMenuOpen: false,
 };
 
 const AppContext = createContext();

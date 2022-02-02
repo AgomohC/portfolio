@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import theme from "./theme";
-import { ThemeProvider } from "@material-ui/core";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { AppProvider } from "./Context/app-context";
@@ -9,9 +8,7 @@ import { AppProvider } from "./Context/app-context";
 ReactDOM.render(
    <React.StrictMode>
       <AppProvider>
-         <ThemeProvider theme={theme}>
-            <App />
-         </ThemeProvider>
+         <App />
       </AppProvider>
    </React.StrictMode>,
    document.getElementById("root")

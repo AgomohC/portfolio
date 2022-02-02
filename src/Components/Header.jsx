@@ -6,12 +6,10 @@ import {
    Toolbar,
    Typography,
    Grid,
-   IconButton,
 } from "@material-ui/core";
 import Menu from "./Menu";
 import { useGlobalContext } from "../Context/app-context";
-import Brightness3Icon from "@material-ui/icons/Brightness3";
-import Brightness5Icon from "@material-ui/icons/Brightness5";
+
 import classNames from "classnames";
 
 const useStyles = makeStyles((theme) => ({
@@ -60,7 +58,8 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
    const classes = useStyles();
-   const { isDarkMode } = useGlobalContext();
+   const { isMenuOpen } = useGlobalContext();
+
    return (
       <AppBar position="fixed">
          <Toolbar
@@ -76,30 +75,6 @@ const Header = () => {
                   justifyContent="flex-end"
                   alignItems="center"
                >
-                  {isDarkMode ? (
-                     <IconButton
-                        color="inherit"
-                        className={classNames(
-                           classes.transition,
-                           classes.rotate,
-                           classes.marginRightThree
-                        )}
-                     >
-                        <Brightness3Icon />
-                     </IconButton>
-                  ) : (
-                     <IconButton
-                        color="inherit"
-                        className={classNames(
-                           classes.transition,
-                           classes.rotate,
-                           classes.marginRightThree
-                        )}
-                     >
-                        <Brightness5Icon />
-                     </IconButton>
-                  )}
-
                   <Grid className={classes.flex}>
                      <a
                         href="#about"
