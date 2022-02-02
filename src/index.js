@@ -4,7 +4,7 @@ import theme from "./theme";
 import { ThemeProvider } from "@material-ui/core";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import AppProvider from "./Context/app-context";
+import { AppProvider } from "./Context/app-context";
 
 ReactDOM.render(
    <React.StrictMode>
