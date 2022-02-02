@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useReducer } from "react";
 import reducer from "./reducer";
+import { OPEN_MENU, CLOSE_MENU } from "./actions";
 
 const initialState = {
    isMenuOpen: false,
@@ -12,8 +13,17 @@ const AppProvider = ({ children }) => {
 
    //  action creators go here
 
+   const openMenu = () => {
+      dispatch({ type: OPEN_MENU });
+   };
+   const closeMenu = () => {
+      dispatch({ type: CLOSE_MENU });
+   };
+
    return (
-      <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
+      <AppContext.Provider value={{ ...state, openMenu, closeMenu }}>
+         {children}
+      </AppContext.Provider>
    );
 };
 

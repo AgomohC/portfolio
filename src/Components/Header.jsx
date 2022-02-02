@@ -6,9 +6,11 @@ import {
    Toolbar,
    Typography,
    Grid,
+   IconButton,
 } from "@material-ui/core";
 import Menu from "./Menu";
 import { useGlobalContext } from "../Context/app-context";
+import MenuIcon from "@material-ui/icons/Menu";
 
 import classNames from "classnames";
 
@@ -54,11 +56,25 @@ const useStyles = makeStyles((theme) => ({
       alignItems: "center",
       justifyContent: "center",
    },
+   hideDesktop: {
+      [theme.breakpoints.up("md")]: {
+         display: "none",
+      },
+   },
+   hdeMobile: {
+      display: "none",
+      [theme.breakpoints.up("md")]: {
+         display: "flex",
+      },
+   },
+   greenText: {
+      color: theme.palette.secondary.main,
+   },
 }));
 
 const Header = () => {
    const classes = useStyles();
-   const { isMenuOpen } = useGlobalContext();
+   const { isMenuOpen, openMenu } = useGlobalContext();
 
    return (
       <AppBar position="fixed">
@@ -75,7 +91,13 @@ const Header = () => {
                   justifyContent="flex-end"
                   alignItems="center"
                >
-                  <Grid className={classes.flex}>
+                  <IconButton
+                     onClick={() => openMenu()}
+                     className={classes.hideDesktop}
+                  >
+                     <MenuIcon className={classes.greenText} />
+                  </IconButton>
+                  <Grid className={classNames(classes.hdeMobile, classes.flex)}>
                      <a
                         href="#about"
                         className={classNames(
