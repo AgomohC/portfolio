@@ -1,0 +1,200 @@
+[
+   {
+      "title": "E-Commerce Store",
+      "url": "https://peculiar-store.vercel.app/",
+      "github_url": "https://github.com/AgomohC/store",
+      "description": "A full-stack e-commerce app built with react, express, mongoose and node.js. State management on the front end is handled with redux toolkit while routing is handled by react-router-dom",
+      "tech_stack": [
+         "React",
+         "Material-UI",
+         "Redux/Toolkit",
+         "Axios",
+         "React-Router-Dom"
+      ]
+   },
+   {
+      "title": "Store API",
+      "url": "https://github.com/AgomohC/store-backend/blob/master/readme.md",
+      "github_url": "https://github.com/AgomohC/store-backend",
+      "description": "An API that serves the e-commerce app at https://peculiar-store.vercel.app/. It includes user authentication, CRUD operations & test payment with paystack. ",
+      "tech_stack": [
+         "Nodejs",
+         "Express",
+         "MongoDB",
+         "Mongoose",
+         "Axios",
+         "PayStack",
+         "CORS",
+         "JSON-Web-Tokens"
+      ]
+   },
+   {
+      "title": "Tribute Page",
+      "url": "https://tribute-page-eight-omega.vercel.app/",
+      "github_url": "https://github.com/AgomohC/tribute-page",
+      "description": "A tribute page dedicated to Marie Curie",
+      "tech_stack": ["HTML5", "CSS3"]
+   },
+   {
+      "title": "Pomodoro Timer",
+      "url": "https://femto-pomodoro-app.netlify.app/",
+      "github_url": "https://github.com/AgomohC/pomodoro-timer",
+      "description": "A pomodoro clock",
+      "tech_stack": ["React", "Bootstrap"]
+   },
+   {
+      "title": "Random Quotes Generator",
+      "url": "https://femto-quotes-generator-2.netlify.app/",
+      "github_url": "https://github.com/AgomohC/random-quotes-generator/tree/main/my-app",
+      "description": "An app that shows random quotes",
+      "tech_stack": ["React", "Bootstrap", "Fetch-API"]
+   },
+   {
+      "title": "Markdown Previewer",
+      "url": "https://femto-markdown-previewer-2.netlify.app/",
+      "github_url": "https://github.com/AgomohC/markdown-previewer",
+      "description": "A markdown previewer",
+      "tech_stack": ["React", "Bootstrap", "Markedjs"]
+   },
+   {
+      "title": "Javascript Calculator",
+      "url": "https://femto-javascript-calculator.netlify.app/",
+      "github_url": "https://github.com/AgomohC/javascript-calculator",
+      "description": "A javascript calculator built with React and Bootstrap",
+      "tech_stack": ["React", "Bootstrap"]
+   },
+   {
+      "title": "Drum Machine",
+      "url": "https://femto-drum-machine-2.netlify.app/",
+      "github_url": "https://github.com/AgomohC/drum-machine",
+      "description": "A drum machine",
+      "tech_stack": ["React", "Bootstrap"]
+   },
+   {
+      "title": "Anonymous Message Board API",
+      "url": "https://femto-anon-messaging-api.herokuapp.com/api-docs/",
+      "github_url": "https://github.com/AgomohC/AgomohC-anonymous-message-board",
+      "description": "An API that serves an anonymous message board ",
+      "tech_stack": [
+         "Nodejs",
+         "MongoDB",
+         "Express",
+         "Mongoose",
+         "Helmet",
+         "CORS",
+         "Swagger-UI"
+      ]
+   },
+   {
+      "title": "Space Tourism",
+      "url": "https://femto-space-tourism.vercel.app/",
+      "github_url": "https://github.com/AgomohC/femto-space-tourism",
+      "description": "This is a solution to the REST Countries API with color theme switcher challenge on Frontend Mentor, (https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/).",
+      "tech_stack": ["React", "Material-UI"]
+   },
+   {
+      "title": "Countries Info App",
+      "url": "https://femto-countries.vercel.app/",
+      "github_url": "https://github.com/AgomohC/femto-countries",
+      "description": "This is a solution to the REST Countries API with color theme switcher challenge on Frontend Mentor, (https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).",
+      "tech_stack": [
+         "React",
+         "Axios",
+         "Material-UI",
+         "React-Router-Dom",
+         "Context-API"
+      ]
+   },
+   {
+      "title": "Stock Price Checker API",
+      "url": "https://femto-stock-price-checker.herokuapp.com/",
+      "github_url": "https://github.com/AgomohC/stock-price-checker",
+      "description": "An API that checks the price of popular stocks and compares the prices of 2 stocks ",
+      "tech_stack": [
+         "Nodejs",
+         "MongoDB",
+         "Express",
+         "Mongoose",
+         "Helmet",
+         "CORS",
+         "Axios"
+      ]
+   },
+   {
+      "title": "Personal Library API",
+      "url": "https://femto-private-library.herokuapp.com/",
+      "github_url": "https://github.com/AgomohC/personal-library",
+      "description": "An API that tracks book titles in a personal library and comments associated with the books",
+      "tech_stack": [
+         "Nodejs",
+         "MongoDB",
+         "Express",
+         "Mongoose",
+         "Helmet",
+         "CORS"
+      ]
+   },
+   {
+      "title": "Issue Tracker API",
+      "url": "https://femto-issue-tracker.herokuapp.com/",
+      "github_url": "https://github.com/AgomohC/issue-tracker",
+      "description": "A REST API that keeps tracks of issues in a project.",
+      "tech_stack": [
+         "Nodejs",
+         "MongoDB",
+         "Express",
+         "Mongoose",
+         "Helmet",
+         "CORS"
+      ]
+   },
+   {
+      "title": "Header Parser",
+      "url": "https://femto-header-parser.glitch.me/",
+      "github_url": "https://github.com/AgomohC/header-parser",
+      "description": "A full stack app that parses the request header of the user and returns their IP address, language and user agent",
+      "tech_stack": ["Nodejs", "Express"]
+   },
+   {
+      "title": "Exercise Tracker",
+      "url": "https://femto-exercise-tracker.glitch.me/",
+      "github_url": "https://github.com/AgomohC/exercise-tracker",
+      "description": "A simple full stack app that keeps tracks of exercise logs of different users",
+      "tech_stack": ["Nodejs", "Express", "MongoDB", "Mongoose"]
+   },
+   {
+      "title": "URL Shortener",
+      "url": "https://femto-url-shortener.glitch.me/",
+      "github_url": "https://github.com/AgomohC/url-shortener",
+      "description": "A full stack app that shortens URLs.",
+      "tech_stack": ["Nodejs", "Express", "MongoDB", "Mongoose"]
+   },
+   {
+      "title": "File Metadata",
+      "url": "https://femto-metadata.glitch.me/",
+      "github_url": "https://github.com/AgomohC/file-metadata",
+      "description": "A simple full stack app that accepts images, uploads to cloudinary and returns its metadata",
+      "tech_stack": ["Nodejs", "Express", "Cloudinary", "Multer"]
+   },
+   {
+      "title": "Timestamp App",
+      "url": "https://femto-timestamp.glitch.me/",
+      "github_url": "https://github.com/AgomohC/timestamp-app",
+      "description": "A simple full stack app that parses unix dates and YYYY-MM-DD formatted dates, and returns utc dates.",
+      "tech_stack": ["Nodejs", "Express"]
+   },
+   {
+      "title": "Orbiter App",
+      "url": "https://orbiter-clone.vercel.app/",
+      "github_url": "https://github.com/AgomohC/orbiter-clone",
+      "description": "A redesign of https://www.getorbiter.com/ using HTML5, CSS3 and Vanilla JS ",
+      "tech_stack": ["HTML5", "CSS3", "Javascript"]
+   },
+   {
+      "title": "Metric-Imperial Converter",
+      "url": "https://femto-metric-converter.glitch.me/",
+      "github_url": "https://github.com/AgomohC/metric-imperial-converter",
+      "description": "A simple Full-Stack app that converts metric units to imperial units and vice versa.",
+      "tech_stack": ["Nodejs", "Express"]
+   }
+]
