@@ -7,6 +7,7 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import { Paper, makeStyles } from "@material-ui/core";
+import ScrollBtn from "./Components/ScrollBtn";
 const useStyles = makeStyles((theme) => ({
    paper: {
       minHeight: "100vh",
@@ -19,6 +20,7 @@ const Home = () => {
    return (
       <Paper component="main" className={classes.paper}>
          <Header />
+         <ScrollBtn />
          <Hero />
          <About />
          <Skills />

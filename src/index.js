@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import { CssBaseline } from "@material-ui/core";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { AppProvider } from "./Context/app-context";
@@ -8,6 +8,7 @@ import { AppProvider } from "./Context/app-context";
 ReactDOM.render(
    <React.StrictMode>
       <AppProvider>
+         <CssBaseline />
          <App />
       </AppProvider>
    </React.StrictMode>,
