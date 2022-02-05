@@ -18,7 +18,7 @@ const Home = () => {
    const classes = useStyles();
 
    return (
-      <Paper component="main" className={classes.paper}>
+      <Paper square component="main" className={classes.paper}>
          <Header />
          <ScrollBtn />
          <Hero />

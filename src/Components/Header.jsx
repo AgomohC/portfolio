@@ -11,7 +11,6 @@ import {
 import Menu from "./Menu";
 import { useGlobalContext } from "../Context/app-context";
 import MenuIcon from "@material-ui/icons/Menu";
-
 import classNames from "classnames";
 
 const useStyles = makeStyles((theme) => ({
@@ -79,90 +78,114 @@ const useStyles = makeStyles((theme) => ({
       },
    },
    icon: {
+      transition: "0.3s all ease-out",
       color: theme.palette.secondary.main,
       animation: "$pulse 1.5s ease-in-out infinite",
+      "&:hover": {
+         color: "#fff",
+      },
+   },
+   overlay: {
+      transition: "0.3s all ease-out",
+      position: "fixed",
+      top: 0,
+      right: 0,
+      zIndex: (props) => (props.isMenuOpen ? 1110 : -1110),
+      height: "100vh",
+      width: "100vw",
+      backgroundColor: alpha(theme.palette.primary.main, 0.3),
    },
 }));
 
 const Header = () => {
-   const classes = useStyles();
-   const { isMenuOpen, openMenu } = useGlobalContext();
+   const { openMenu, isMenuOpen, closeMenu } = useGlobalContext();
 
+   const props = { isMenuOpen };
+   const classes = useStyles(props);
    return (
-      <AppBar position="fixed">
-         <Toolbar
-            className={classes.root}
-            id="back-to-top-anchor"
-            component="nav"
-         >
-            <Typography variant="h1">chinaemerem</Typography>
-            <Grid container direction="row">
-               <Grid
-                  item
-                  container
-                  justifyContent="flex-end"
-                  alignItems="center"
-               >
-                  <IconButton
-                     onClick={() => openMenu()}
-                     className={classes.hideDesktop}
+      <>
+         <AppBar position="fixed">
+            <Toolbar
+               className={classes.root}
+               id="back-to-top-anchor"
+               component="nav"
+            >
+               <Typography variant="h1">chinaemerem</Typography>
+               <Grid container direction="row">
+                  <Grid
+                     item
+                     container
+                     justifyContent="flex-end"
+                     alignItems="center"
                   >
-                     <MenuIcon className={classes.icon} />
-                  </IconButton>
-                  <Grid className={classNames(classes.hdeMobile, classes.flex)}>
-                     <a
-                        href="#about"
-                        className={classNames(
-                           classes.transition,
-                           classes.menuItem,
-                           classes.increaseSize
-                        )}
+                     <IconButton
+                        onClick={() => openMenu()}
+                        className={classes.hideDesktop}
                      >
-                        <Typography variant="subtitle2" color="initial">
-                           <span className={classes.number}>01. </span>About me
-                        </Typography>
-                     </a>
-                     <a
-                        href="#skills"
-                        className={classNames(
-                           classes.transition,
-                           classes.increaseSize,
-                           classes.menuItem
-                        )}
+                        <MenuIcon className={classes.icon} />
+                     </IconButton>
+                     <Grid
+                        className={classNames(classes.hdeMobile, classes.flex)}
                      >
-                        <Typography variant="subtitle2" color="initial">
-                           <span className={classes.number}>02. </span>Skills
-                        </Typography>
-                     </a>
-                     <a
-                        href="#projects"
-                        className={classNames(
-                           classes.transition,
-                           classes.menuItem,
-                           classes.increaseSize
-                        )}
-                     >
-                        <Typography variant="subtitle2" color="initial">
-                           <span className={classes.number}>03. </span>Projects
-                        </Typography>
-                     </a>
-                     <a
-                        href="#contact"
-                        className={classNames(
-                           classes.transition,
-                           classes.menuItem,
-                           classes.increaseSize
-                        )}
-                     >
-                        <Typography variant="subtitle2" color="initial">
-                           <span className={classes.number}>04. </span>Contact
-                        </Typography>
-                     </a>
+                        <a
+                           href="#about"
+                           className={classNames(
+                              classes.transition,
+                              classes.menuItem,
+                              classes.increaseSize
+                           )}
+                        >
+                           <Typography variant="subtitle2" color="initial">
+                              <span className={classes.number}>01. </span>About
+                              me
+                           </Typography>
+                        </a>
+                        <a
+                           href="#skills"
+                           className={classNames(
+                              classes.transition,
+                              classes.increaseSize,
+                              classes.menuItem
+                           )}
+                        >
+                           <Typography variant="subtitle2" color="initial">
+                              <span className={classes.number}>02. </span>Skills
+                           </Typography>
+                        </a>
+                        <a
+                           href="#projects"
+                           className={classNames(
+                              classes.transition,
+                              classes.menuItem,
+                              classes.increaseSize
+                           )}
+                        >
+                           <Typography variant="subtitle2" color="initial">
+                              <span className={classes.number}>03. </span>
+                              Projects
+                           </Typography>
+                        </a>
+                        <a
+                           href="#contact"
+                           className={classNames(
+                              classes.transition,
+                              classes.menuItem,
+                              classes.increaseSize
+                           )}
+                        >
+                           <Typography variant="subtitle2" color="initial">
+                              <span className={classes.number}>04. </span>
+                              Contact
+                           </Typography>
+                        </a>
+                     </Grid>
                   </Grid>
                </Grid>
-            </Grid>
-         </Toolbar>
-      </AppBar>
+            </Toolbar>
+         </AppBar>
+         <Menu />
+         <div onClick={() => closeMenu()} className={classes.overlay}></div>
+      </>
    );
 };
 
