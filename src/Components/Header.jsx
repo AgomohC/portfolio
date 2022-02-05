@@ -31,20 +31,14 @@ const useStyles = makeStyles((theme) => ({
          color: theme.palette.secondary.main,
       },
    },
-   marginRightThree: {
-      marginRight: theme.spacing(3),
-   },
+
    number: {
       color: theme.palette.secondary.main,
    },
    transition: {
       transition: "0.5s all ease-out",
    },
-   rotate: {
-      "&:hover": {
-         transform: "Rotate(165deg)",
-      },
-   },
+
    increaseSize: {
       "&:hover": {
          transform: "Scale(1.1)",
@@ -66,23 +60,12 @@ const useStyles = makeStyles((theme) => ({
          display: "flex",
       },
    },
-   "@keyframes pulse": {
-      "0%": {
-         transform: "Scale(1.1)",
-      },
-      "50%": {
-         transform: "Scale(0.98)",
-      },
-      "100%": {
-         transform: "Scale(1.1)",
-      },
-   },
    icon: {
       transition: "0.3s all ease-out",
       color: theme.palette.secondary.main,
-      animation: "$pulse 1.5s ease-in-out infinite",
       "&:hover": {
          color: "#fff",
+         transform: "Rotate(90deg)",
       },
    },
    overlay: {
@@ -94,12 +77,13 @@ const useStyles = makeStyles((theme) => ({
       height: "100vh",
       width: "100vw",
       backgroundColor: alpha(theme.palette.primary.main, 0.3),
+      backdropFilter: "blur(4px)",
+      "-webkit-backdrop-filter": "blur(4px)",
    },
 }));
 
 const Header = () => {
    const { openMenu, isMenuOpen, closeMenu } = useGlobalContext();
-
    const props = { isMenuOpen };
    const classes = useStyles(props);
    return (
@@ -184,7 +168,10 @@ const Header = () => {
             </Toolbar>
          </AppBar>
          <Menu />
-         <div onClick={() => closeMenu()} className={classes.overlay}></div>
+         <div
+            onClick={() => closeMenu()}
+            className={classNames(classes.hideDesktop, classes.overlay)}
+         ></div>
       </>
    );
 };
