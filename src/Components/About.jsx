@@ -1,10 +1,10 @@
 import React from "react";
 import { Grid, makeStyles, Typography, alpha } from "@material-ui/core";
-import classNames from "classnames";
+import meImg from "../assets/me.jpg";
 
 const useStyles = makeStyles((theme) => ({
    container: {
-      height: "100vh",
+      minHeight: "100vh",
       padding: theme.spacing(5),
       display: "flex",
       alignItems: "center",
@@ -12,7 +12,23 @@ const useStyles = makeStyles((theme) => ({
          paddingLeft: theme.spacing(10),
       },
    },
-
+   imgContainer: {
+      marginTop: theme.spacing(4),
+      [theme.breakpoints.up("md")]: {
+         marginTop: 0,
+      },
+      height: "auto",
+      width: "100%",
+   },
+   img: {
+      borderRadius: theme.spacing(2),
+      height: "50%",
+      width: "50%",
+      [theme.breakpoints.up("md")]: {
+         height: "75%",
+         width: "75%",
+      },
+   },
    text: {
       color: alpha("#fff", 0.85),
    },
@@ -27,9 +43,9 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: alpha(theme.palette.secondary.main, 0.85),
    },
    marginBottomFour: {
-      marginBottom: theme.spacing(5),
+      marginBottom: theme.spacing(4),
       [theme.breakpoints.up("md")]: {
-         marginBottom: theme.spacing(10),
+         marginBottom: theme.spacing(6),
       },
    },
 }));
@@ -45,12 +61,12 @@ const About = () => {
             alignItems="center"
          >
             <Grid container alignItems="center" spacing={2} item xs={12} md={6}>
-               <Grid item className={classes.marginBottomFour} xs={7} md={5}>
+               <Grid item className={classes.marginBottomFour} xs={7} md={6}>
                   <Typography className={classes.text} variant="h5">
                      <span className={classes.greenText}>01.</span> About Me.
                   </Typography>
                </Grid>
-               <Grid className={classes.marginBottomFour} item xs={5} md={7}>
+               <Grid className={classes.marginBottomFour} item xs={5} md={6}>
                   <div className={classes.divider}></div>
                </Grid>
                <Grid item xs={12}>
@@ -70,7 +86,9 @@ const About = () => {
                </Grid>
             </Grid>
             <Grid item xs={12} md={4}>
-               <img src="#" alt="chinaemerem" />
+               <div className={classes.imgContainer}>
+                  <img src={meImg} className={classes.img} alt="chinaemerem" />
+               </div>
             </Grid>
          </Grid>
       </section>

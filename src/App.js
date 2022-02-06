@@ -1,11 +1,11 @@
 import Home from "./Home";
 import { createTheme, ThemeProvider } from "@material-ui/core";
-import { useGlobalContext } from "./Context/app-context";
 
 const App = () => {
    const theme = createTheme({
       typography: {
          fontFamily: ["Lato", "Helvetica", "Arial", "sans-serif"].join(","),
+
          h1: {
             fontFamily: ["Comforter", "cursive"].join(","),
             fontSize: "1.6rem",
@@ -25,6 +25,10 @@ const App = () => {
          },
          h6: {
             fontFamily: ["Dosis", "sans-serif"].join(","),
+         },
+         body1: {
+            letterSpacing: 1.3,
+            lineHeight: 1.5,
          },
          subtitle2: {
             letterSpacing: 1.4,

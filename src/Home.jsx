@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
    paper: {
       minHeight: "100vh",
       backgroundColor: theme.palette.primary.main,
+      scrollBehavior: "smooth",
    },
 }));
 const Home = () => {
