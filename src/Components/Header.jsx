@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
          paddingLeft: 96,
          paddingRight: 96,
       },
-      overflow: "hidden",
       position: "relative",
    },
    menuItem: {
@@ -31,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
          color: theme.palette.secondary.main,
       },
    },
-
    number: {
       color: theme.palette.secondary.main,
    },
@@ -88,7 +86,7 @@ const Header = () => {
    const classes = useStyles(props);
    return (
       <>
-         <AppBar position="fixed">
+         <AppBar position="static">
             <Toolbar
                className={classes.root}
                id="back-to-top-anchor"

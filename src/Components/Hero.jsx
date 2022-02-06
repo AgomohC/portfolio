@@ -4,16 +4,16 @@ import classNames from "classnames";
 
 const useStyles = makeStyles((theme) => ({
    container: {
-      marginTop: 56,
+      // marginTop: 56,
       height: "auto",
       minHeight: "calc(100vh - 56px)",
-      paddingLeft: theme.spacing(4),
+      paddingLeft: theme.spacing(5),
       [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
-         marginTop: 48,
+         // marginTop: 48,
          minHeight: "calc(100vh - 48px)",
       },
       [theme.breakpoints.up("sm")]: {
-         marginTop: 64,
+         // marginTop: 64,
          paddingLeft: theme.spacing(10),
          minHeight: "calc(100vh - 64px)",
       },
@@ -81,7 +81,7 @@ const Hero = () => {
                   color="initial"
                   className={classNames(classes.nameText, classes.bigText)}
                >
-                  Emerem Agomoh.
+                  Chinaemerem.
                </Typography>
             </Grid>
             <Grid item xs={12} className={classes.textContainer}>
@@ -93,16 +93,17 @@ const Hero = () => {
                   A full stack web developer
                </Typography>
             </Grid>
-            <Grid item xs={10} sm={8} md={6} className={classes.textContainer}>
+            <Grid item xs={12} sm={8} className={classes.textContainer}>
                <Typography
                   className={classes.paleText}
                   variant="body1"
                   component="h4"
                   color="initial"
                >
-                  I'm a software engineer with experience building web apps with
-                  modern technologies like ReactJS/Material-UI/NodeJS/ExpressJS/
-                  MongoDB and Mongoose ODM
+                  A full stack engineer with experience building web apps with
+                  modern technologies. I'm able to create pixel perfect UI
+                  design with front end technologies. I can also create and
+                  implement REST-ful APIs.
                </Typography>
             </Grid>
             <Grid item xs={12} className={classes.textContainer}>

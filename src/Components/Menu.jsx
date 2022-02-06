@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
       right: (props) => (props.isMenuOpen ? "0%" : "-100%"),
       zIndex: 1111,
       backgroundColor: theme.palette.primary.main,
+      boxShadow: theme.shadows[10],
    },
    menuContainer: {
       marginTop: theme.spacing(10),
