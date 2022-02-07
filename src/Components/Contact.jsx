@@ -115,7 +115,7 @@ const Contact = () => {
                      lg={2}
                      className={classes.btnContainer}
                   >
-                     <Button
+                     <IconButton
                         color="secondary"
                         component="a"
                         href="https://www.linkedin.com/in/agomohchinaemereme/"
@@ -123,8 +123,8 @@ const Contact = () => {
                         rel="noopener noreferrer"
                      >
                         <LinkedIn />
-                     </Button>
-                     <Button
+                     </IconButton>
+                     <IconButton
                         color="secondary"
                         component="a"
                         href="https://github.com/AgomohC"
@@ -132,8 +132,8 @@ const Contact = () => {
                         rel="noopener noreferrer"
                      >
                         <GitHub />
-                     </Button>
-                     <Button
+                     </IconButton>
+                     <IconButton
                         color="secondary"
                         component="a"
                         href="https://twitter.com/femto_ace"
@@ -141,9 +141,8 @@ const Contact = () => {
                         rel="noopener noreferrer"
                      >
                         <Twitter />
-                     </Button>
-
-                     <Button
+                     </IconButton>
+                     <IconButton
                         color="secondary"
                         component="a"
                         href="tel:+23481788390"
@@ -151,7 +150,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                      >
                         <Phone />
-                     </Button>
+                     </IconButton>
                   </Grid>
                </Grid>
             </Grid>
