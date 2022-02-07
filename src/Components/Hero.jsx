@@ -111,6 +111,10 @@ const Hero = () => {
                   className={classes.btn}
                   variant="outlined"
                   color="secondary"
+                  component="a"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
                >
                   my cv
                </Button>

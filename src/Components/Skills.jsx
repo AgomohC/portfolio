@@ -3,7 +3,7 @@ import { Grid, makeStyles, Typography, alpha } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
    container: {
-      minHeight: "100vh",
+      height: "auto",
       paddingTop: theme.spacing(5),
       paddingRight: theme.spacing(5),
       paddingLeft: theme.spacing(5),
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
       alignItems: "center",
       justifyContent: "center",
       backgroundColor: alpha("#fff", 0.85),
-      margin: theme.spacing(2),
+      margin: theme.spacing(1),
       borderRadius: 8,
       padding: theme.spacing(2),
       boxShadow: theme.shadows[24],
@@ -45,10 +45,10 @@ const useStyles = makeStyles((theme) => ({
    express: {
       height: 50,
       width: 50,
-      transform: "Scale(1.5)",
+      transform: "Scale(1.2)",
 
-      [theme.breakpoints.up("md")]: {
-         transform: "Scale(2)",
+      [theme.breakpoints.up("lg")]: {
+         transform: "Scale(1.5)",
       },
    },
 }));
@@ -73,75 +73,75 @@ const Skills = () => {
                   <div className={classes.divider}></div>
                </Grid>
             </Grid>
-            <Grid container justifyContent="space-around" alignItems="center">
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+            <Grid container justifyContent="space-evenly" alignItems="center">
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/50/000000/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-shadow-tal-revivo.png"
                      alt="HTML"
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/color/50/000000/css3.png"
                      alt="css3"
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/color/50/000000/javascript--v1.png"
                      alt="Javascript"
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/color/50/000000/bootstrap.png"
                      alt="Bootstrap"
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/ultraviolet/50/000000/react--v1.png"
                      alt="React"
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/color/50/000000/material-ui.png"
                      alt="material-ui"
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/color/50/000000/redux.png"
                      alt="redux"
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/color/50/000000/nodejs.png"
                      alt="nodejs"
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
                      alt="expressjs"
                      className={classes.express}
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/color/50/000000/mongodb.png"
                      alt="mongodb"
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/color/50/000000/git.png"
                      alt="git"
                   />
                </Grid>
-               <Grid item xs={4} sm={3} md={2} className={classes.imgContainer}>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
                      src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/50/000000/external-postman-is-the-only-complete-api-development-environment-logo-shadow-tal-revivo.png"
                      alt="postman"
