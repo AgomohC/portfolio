@@ -8,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: theme.spacing(5),
       paddingRight: theme.spacing(5),
       paddingLeft: theme.spacing(5),
-
       display: "flex",
       alignItems: "center",
       [theme.breakpoints.up("sm")]: {
@@ -22,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
       },
       height: "auto",
       width: "100%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      position: "relative",
    },
    img: {
       borderRadius: theme.spacing(2),
@@ -31,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
          height: "75%",
          width: "75%",
       },
+      boxShadow: theme.shadows[15],
    },
    text: {
       color: alpha("#fff", 0.85),

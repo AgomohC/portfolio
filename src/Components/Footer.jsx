@@ -17,9 +17,8 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: "column",
       justifyContent: "center",
       borderRadius: "8px 8px 0 0",
-     
       position: "relative",
-      backgroundColor: alpha(theme.palette.secondary.main, 0.01)
+      backgroundColor: alpha(theme.palette.secondary.main, 0.13)
    },
    text: {
       color: alpha("#fff", 0.85),
