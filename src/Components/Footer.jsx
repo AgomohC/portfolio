@@ -1,12 +1,5 @@
 import React from "react";
-import {
-   Grid,
-   Typography,
-   makeStyles,
-   IconButton,
-   alpha,
-} from "@material-ui/core";
-import { GitHub } from "@material-ui/icons";
+import { Typography, makeStyles, alpha } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
    container: {
@@ -18,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: "center",
       borderRadius: "8px 8px 0 0",
       position: "relative",
-      backgroundColor: alpha(theme.palette.secondary.main, 0.13)
+      backgroundColor: alpha(theme.palette.secondary.main, 0.13),
    },
    text: {
       color: alpha("#fff", 0.85),
@@ -28,25 +21,6 @@ const useStyles = makeStyles((theme) => ({
    },
    paleText: {
       color: alpha("#fff", 0.55),
-   },
-   waveDivider: {
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      overflow: "hidden",
-      lineHeight: 0,
-   },
-
-   svg: {
-      position: "relative",
-      display: "block",
-      width: "calc(100% + 1.3px)",
-      height: "81px",
-   },
-
-   waveShapeFill: {
-      fill: "#64FFDA",
    },
 }));
 
@@ -81,7 +55,6 @@ const Footer = () => {
          >
             © {year}
          </Typography>
-       
       </footer>
    );
 };

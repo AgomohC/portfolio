@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
          width: "75%",
       },
       boxShadow: theme.shadows[15],
+      border: "4px #64ffda solid",
    },
    text: {
       color: alpha("#fff", 0.85),

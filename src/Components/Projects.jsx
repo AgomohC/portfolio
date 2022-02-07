@@ -1,5 +1,16 @@
 import React from "react";
-import { Grid, makeStyles, Typography, alpha } from "@material-ui/core";
+import {
+   Grid,
+   makeStyles,
+   Typography,
+   alpha,
+   Card,
+   CardMedia,
+   CardActions,
+   CardContent,
+   Button,
+} from "@material-ui/core";
+import { Link, GitHub } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
    container: {
@@ -32,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
          marginBottom: theme.spacing(6),
       },
    },
+   card: {
+      backgroundColor: theme.palette.primary.main,
+      boxShadow: theme.shadows[12],
+   },
 }));
 const Projects = () => {
    const classes = useStyles();
@@ -39,7 +54,7 @@ const Projects = () => {
       <section id="projects" className={classes.container}>
          <Grid
             container
-            direction="row"
+            direction="column"
             justifyContent="space-between"
             alignItems="center"
          >
@@ -51,6 +66,35 @@ const Projects = () => {
                </Grid>
                <Grid className={classes.marginBottomFour} item xs={5} md={6}>
                   <div className={classes.divider}></div>
+               </Grid>
+            </Grid>
+            <Grid container justifyContent="center" spacing={4}>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia title="#" image="#" />
+                     <CardContent></CardContent>
+                     <CardActions>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="#"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="#"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
                </Grid>
             </Grid>
          </Grid>
