@@ -5,6 +5,7 @@ import meImg from "../assets/me.jpg";
 const useStyles = makeStyles((theme) => ({
    container: {
       height: "auto",
+      paddingTop: theme.spacing(10),
       paddingBottom: theme.spacing(10),
       paddingLeft: theme.spacing(5),
       paddingRight: theme.spacing(5),

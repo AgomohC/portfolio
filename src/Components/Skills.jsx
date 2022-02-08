@@ -7,6 +7,8 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: theme.spacing(5),
       paddingLeft: theme.spacing(5),
       paddingBottom: theme.spacing(10),
+      paddingTop: theme.spacing(10),
+
       display: "flex",
       alignItems: "center",
       [theme.breakpoints.up("sm")]: {

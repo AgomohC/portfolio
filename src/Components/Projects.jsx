@@ -40,6 +40,8 @@ const useStyles = makeStyles((theme) => ({
       height: "auto",
       paddingBottom: theme.spacing(10),
       paddingRight: theme.spacing(5),
+      paddingTop: theme.spacing(10),
+
       paddingLeft: theme.spacing(5),
       display: "flex",
       alignItems: "center",
