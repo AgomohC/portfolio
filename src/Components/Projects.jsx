@@ -22,6 +22,18 @@ import tourism from "../assets/tourism.png";
 import converter from "../assets/converter.png";
 import shortener from "../assets/shortener.png";
 import metadata from "../assets/metadata.png";
+import timestamp from "../assets/timestamp.png";
+import markdown from "../assets/markdown.png";
+import pomodoro from "../assets/pomodoro.png";
+import tracker from "../assets/tracker.png";
+import header from "../assets/header.png";
+import tribute from "../assets/tribute.png";
+import library from "../assets/library.png";
+import issues from "../assets/issues.png";
+import drum from "../assets/drum.png";
+import message from "../assets/message.png";
+import calculator from "../assets/calculator.png";
+import stock from "../assets/stock.png";
 
 const useStyles = makeStyles((theme) => ({
    container: {
@@ -61,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.primary.main,
       boxShadow: theme.shadows[12],
       width: "auto",
+      minWidth: 160,
    },
    cardImg: {
       height: "150px",
@@ -525,6 +538,522 @@ const Projects = () => {
                            component="a"
                            target="_blank"
                            href="https://github.com/AgomohC/file-metadata"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Timestamp App"
+                        image={timestamp}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Timestamp App
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           ExpressJS
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-timestamp.glitch.me/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/timestamp-app"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Markdown Previewer"
+                        image={markdown}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Markdown Previewer
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           React + Bootstrap + MarkedJS
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-markdown-previewer-2.netlify.app/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/markdown-previewer"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Pomodoro Timer"
+                        image={pomodoro}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Pomodoro Timer
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           React + Bootstrap
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-pomodoro-app.netlify.app/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/pomodoro-timer"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Exercise Tracker"
+                        image={tracker}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Exercise Tracker
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           ExpressJS + Mongoose
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-exercise-tracker.glitch.me/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/exercise-tracker"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Header Parser"
+                        image={header}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Header Parser
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           ExpressJS
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-header-parser.glitch.me/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/header-parser"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Tribute Page"
+                        image={tribute}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Tribute Page
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           HTML5 + CSS3
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://tribute-page-eight-omega.vercel.app/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/tribute-page"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Issue Tracker API"
+                        image={issues}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Issue Tracker API
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           ExpressJS + Mongoose
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-issue-tracker.herokuapp.com/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/issue-tracker"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Personal Library API"
+                        image={library}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Personal Library API
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           ExpressJS + Mongoose
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-private-library.herokuapp.com/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/personal-library"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Drum Machine"
+                        image={drum}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Drum Machine
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           React + Bootstrap
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-javascript-calculator.netlify.app/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/javascript-calculator"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Anonymous Message Board API"
+                        image={message}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Anon Message Board API
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           Express + Mongoose
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-anon-messaging-api.herokuapp.com/api-docs/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/AgomohC-anonymous-message-board"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Javascript Calculator"
+                        image={calculator}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Javascript Calculator
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           React + Bootstrap
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-javascript-calculator.netlify.app/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/javascript-calculator"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={6} sm={4} md={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Stock Price Checker API"
+                        image={stock}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Stock Price Checker API
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           ExpressJS + Mongoose
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-stock-price-checker.herokuapp.com/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/stock-price-checker"
                            rel="noopener noreferrer"
                            color="secondary"
                            size="small"
