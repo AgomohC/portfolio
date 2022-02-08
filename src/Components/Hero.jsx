@@ -5,14 +5,13 @@ import classNames from "classnames";
 const useStyles = makeStyles((theme) => ({
    container: {
       height: "auto",
-      minHeight: "calc(100vh - 56px)",
+      paddingTop: theme.spacing(5),
+      paddingRight: theme.spacing(10),
+      paddingBottom: theme.spacing(10),
       paddingLeft: theme.spacing(5),
-      [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
-         minHeight: "calc(100vh - 48px)",
-      },
       [theme.breakpoints.up("sm")]: {
+         paddingTop: theme.spacing(10),
          paddingLeft: theme.spacing(10),
-         minHeight: "calc(100vh - 64px)",
       },
       display: "flex",
       alignItems: "center",

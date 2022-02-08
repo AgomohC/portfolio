@@ -37,8 +37,8 @@ import stock from "../assets/stock.png";
 
 const useStyles = makeStyles((theme) => ({
    container: {
-      minHeight: "100vh",
-      paddingTop: theme.spacing(5),
+      height: "auto",
+      paddingBottom: theme.spacing(10),
       paddingRight: theme.spacing(5),
       paddingLeft: theme.spacing(5),
       display: "flex",
@@ -72,7 +72,6 @@ const useStyles = makeStyles((theme) => ({
    card: {
       backgroundColor: theme.palette.primary.main,
       boxShadow: theme.shadows[12],
-      // width: "auto",
       width: 282,
    },
    cardImg: {
@@ -138,7 +137,7 @@ const Projects = () => {
                         <Button
                            component="a"
                            target="_blank"
-                           href="https://portfolio-agomohc.vercel.app/"
+                           href="https://femto-portfolio-agomohc.vercel.app/"
                            rel="noopener noreferrer"
                            color="secondary"
                            variant="contained"

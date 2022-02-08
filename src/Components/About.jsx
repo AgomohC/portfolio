@@ -4,10 +4,10 @@ import meImg from "../assets/me.jpg";
 
 const useStyles = makeStyles((theme) => ({
    container: {
-      minHeight: "100vh",
-      paddingTop: theme.spacing(5),
-      paddingRight: theme.spacing(5),
+      height: "auto",
+      paddingBottom: theme.spacing(10),
       paddingLeft: theme.spacing(5),
+      paddingRight: theme.spacing(5),
       display: "flex",
       alignItems: "center",
       [theme.breakpoints.up("sm")]: {

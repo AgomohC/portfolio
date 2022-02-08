@@ -12,11 +12,10 @@ import classNames from "classnames";
 
 const useStyles = makeStyles((theme) => ({
    container: {
-      minHeight: "100vh",
-      paddingTop: theme.spacing(5),
+      height: "auto",
       paddingRight: theme.spacing(5),
       paddingLeft: theme.spacing(5),
-
+      paddingBottom: theme.spacing(10),
       display: "flex",
       alignItems: "center",
       [theme.breakpoints.up("sm")]: {

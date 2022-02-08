@@ -4,9 +4,9 @@ import { Grid, makeStyles, Typography, alpha } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
    container: {
       height: "auto",
-      paddingTop: theme.spacing(5),
       paddingRight: theme.spacing(5),
       paddingLeft: theme.spacing(5),
+      paddingBottom: theme.spacing(10),
       display: "flex",
       alignItems: "center",
       [theme.breakpoints.up("sm")]: {
@@ -137,8 +137,20 @@ const Skills = () => {
                </Grid>
                <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
                   <img
+                     src="https://img.icons8.com/color/50/000000/typescript.png"
+                     alt="typescript"
+                  />
+               </Grid>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
+                  <img
                      src="https://img.icons8.com/color/50/000000/git.png"
                      alt="git"
+                  />
+               </Grid>
+               <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
+                  <img
+                     src="https://img.icons8.com/color/50/000000/figma--v1.png"
+                     alt="figma"
                   />
                </Grid>
                <Grid item xs={3} sm={2} lg={1} className={classes.imgContainer}>
