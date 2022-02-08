@@ -72,8 +72,8 @@ const useStyles = makeStyles((theme) => ({
    card: {
       backgroundColor: theme.palette.primary.main,
       boxShadow: theme.shadows[12],
-      width: "auto",
-      minWidth: 160,
+      // width: "auto",
+      width: 282,
    },
    cardImg: {
       height: "150px",
@@ -116,7 +116,7 @@ const Projects = () => {
                </Grid>
             </Grid>
             <Grid container justifyContent="center" spacing={4}>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -159,7 +159,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -202,7 +202,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -245,7 +245,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -288,7 +288,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -332,7 +332,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -375,7 +375,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -418,7 +418,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -461,7 +461,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -504,7 +504,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -547,7 +547,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -590,7 +590,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -633,7 +633,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -676,7 +676,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -719,7 +719,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -762,7 +762,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -805,7 +805,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -848,7 +848,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -891,7 +891,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -934,7 +934,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -977,7 +977,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
@@ -1020,7 +1020,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={6} sm={4} md={3}>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
