@@ -1,34 +1,5 @@
 [
    {
-      "title": "E-Commerce Store",
-      "url": "https://peculiar-store.vercel.app/",
-      "github_url": "https://github.com/AgomohC/store",
-      "description": "A full-stack e-commerce app built with react, express, mongoose and node.js. State management on the front end is handled with redux toolkit while routing is handled by react-router-dom",
-      "tech_stack": [
-         "React",
-         "Material-UI",
-         "Redux/Toolkit",
-         "Axios",
-         "React-Router-Dom"
-      ]
-   },
-   {
-      "title": "Store API",
-      "url": "https://github.com/AgomohC/store-backend/blob/master/readme.md",
-      "github_url": "https://github.com/AgomohC/store-backend",
-      "description": "An API that serves the e-commerce app at https://peculiar-store.vercel.app/. It includes user authentication, CRUD operations & test payment with paystack. ",
-      "tech_stack": [
-         "Nodejs",
-         "Express",
-         "MongoDB",
-         "Mongoose",
-         "Axios",
-         "PayStack",
-         "CORS",
-         "JSON-Web-Tokens"
-      ]
-   },
-   {
       "title": "Tribute Page",
       "url": "https://tribute-page-eight-omega.vercel.app/",
       "github_url": "https://github.com/AgomohC/tribute-page",
@@ -42,13 +13,7 @@
       "description": "A pomodoro clock",
       "tech_stack": ["React", "Bootstrap"]
    },
-   {
-      "title": "Random Quotes Generator",
-      "url": "https://femto-quotes-generator-2.netlify.app/",
-      "github_url": "https://github.com/AgomohC/random-quotes-generator/tree/main/my-app",
-      "description": "An app that shows random quotes",
-      "tech_stack": ["React", "Bootstrap", "Fetch-API"]
-   },
+
    {
       "title": "Markdown Previewer",
       "url": "https://femto-markdown-previewer-2.netlify.app/",
@@ -85,26 +50,7 @@
          "Swagger-UI"
       ]
    },
-   {
-      "title": "Space Tourism",
-      "url": "https://femto-space-tourism.vercel.app/",
-      "github_url": "https://github.com/AgomohC/femto-space-tourism",
-      "description": "This is a solution to the REST Countries API with color theme switcher challenge on Frontend Mentor, (https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/).",
-      "tech_stack": ["React", "Material-UI"]
-   },
-   {
-      "title": "Countries Info App",
-      "url": "https://femto-countries.vercel.app/",
-      "github_url": "https://github.com/AgomohC/femto-countries",
-      "description": "This is a solution to the REST Countries API with color theme switcher challenge on Frontend Mentor, (https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).",
-      "tech_stack": [
-         "React",
-         "Axios",
-         "Material-UI",
-         "React-Router-Dom",
-         "Context-API"
-      ]
-   },
+
    {
       "title": "Stock Price Checker API",
       "url": "https://femto-stock-price-checker.herokuapp.com/",
@@ -162,13 +108,7 @@
       "description": "A simple full stack app that keeps tracks of exercise logs of different users",
       "tech_stack": ["Nodejs", "Express", "MongoDB", "Mongoose"]
    },
-   {
-      "title": "URL Shortener",
-      "url": "https://femto-url-shortener.glitch.me/",
-      "github_url": "https://github.com/AgomohC/url-shortener",
-      "description": "A full stack app that shortens URLs.",
-      "tech_stack": ["Nodejs", "Express", "MongoDB", "Mongoose"]
-   },
+
    {
       "title": "File Metadata",
       "url": "https://femto-metadata.glitch.me/",
@@ -181,20 +121,6 @@
       "url": "https://femto-timestamp.glitch.me/",
       "github_url": "https://github.com/AgomohC/timestamp-app",
       "description": "A simple full stack app that parses unix dates and YYYY-MM-DD formatted dates, and returns utc dates.",
-      "tech_stack": ["Nodejs", "Express"]
-   },
-   {
-      "title": "Orbiter App",
-      "url": "https://orbiter-clone.vercel.app/",
-      "github_url": "https://github.com/AgomohC/orbiter-clone",
-      "description": "A redesign of https://www.getorbiter.com/ using HTML5, CSS3 and Vanilla JS ",
-      "tech_stack": ["HTML5", "CSS3", "Javascript"]
-   },
-   {
-      "title": "Metric-Imperial Converter",
-      "url": "https://femto-metric-converter.glitch.me/",
-      "github_url": "https://github.com/AgomohC/metric-imperial-converter",
-      "description": "A simple Full-Stack app that converts metric units to imperial units and vice versa.",
       "tech_stack": ["Nodejs", "Express"]
    }
 ]

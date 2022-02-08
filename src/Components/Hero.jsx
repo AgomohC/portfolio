@@ -4,16 +4,13 @@ import classNames from "classnames";
 
 const useStyles = makeStyles((theme) => ({
    container: {
-      // marginTop: 56,
       height: "auto",
       minHeight: "calc(100vh - 56px)",
       paddingLeft: theme.spacing(5),
       [`${theme.breakpoints.up("xs")} and (orientation: landscape)`]: {
-         // marginTop: 48,
          minHeight: "calc(100vh - 48px)",
       },
       [theme.breakpoints.up("sm")]: {
-         // marginTop: 64,
          paddingLeft: theme.spacing(10),
          minHeight: "calc(100vh - 64px)",
       },
@@ -90,7 +87,7 @@ const Hero = () => {
                   variant="h4"
                   color="initial"
                >
-                  A full stack web developer
+                  A web developer
                </Typography>
             </Grid>
             <Grid item xs={12} sm={8} className={classes.textContainer}>

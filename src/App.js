@@ -30,6 +30,9 @@ const App = () => {
             letterSpacing: 1.3,
             lineHeight: 1.5,
          },
+         body2: {
+            fontSize: "0.75rem",
+         },
          subtitle2: {
             letterSpacing: 1.4,
          },
