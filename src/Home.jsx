@@ -8,6 +8,7 @@ import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import { Paper, makeStyles } from "@material-ui/core";
 import ScrollBtn from "./Components/ScrollBtn";
+
 const useStyles = makeStyles((theme) => ({
    paper: {
       minHeight: "100vh",

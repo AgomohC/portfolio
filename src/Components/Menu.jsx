@@ -3,6 +3,7 @@ import { Grid, makeStyles, Paper, Typography, Button } from "@material-ui/core";
 import { useGlobalContext } from "../Context/app-context";
 import classNames from "classnames";
 import { Close } from "@material-ui/icons";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
    container: {
@@ -99,43 +100,75 @@ const Menu = () => {
                item
                className={classNames(classes.transition, classes.increaseSize)}
             >
-               <a href="#about" className={classes.menuItem}>
+               <Link
+                  onClick={() => closeMenu()}
+                  href="#about"
+                  className={classes.menuItem}
+                  to="about"
+                  spy={false}
+                  smooth={true}
+                  duration={500}
+               >
                   <Typography variant="subtitle2" color="initial">
                      <span className={classes.number}>01. </span>About me
                   </Typography>
-               </a>
+               </Link>
             </Grid>
             <Grid
                item
                className={classNames(classes.transition, classes.increaseSize)}
             >
-               <a href="#skills" className={classes.menuItem}>
+               <Link
+                  onClick={() => closeMenu()}
+                  href="#skills"
+                  className={classes.menuItem}
+                  to="skills"
+                  spy={false}
+                  smooth={true}
+                  duration={600}
+               >
                   <Typography variant="subtitle2" color="initial">
                      <span className={classes.number}>02. </span>Skills
                   </Typography>
-               </a>
+               </Link>
             </Grid>
             <Grid
                item
                className={classNames(classes.transition, classes.increaseSize)}
             >
-               <a href="#projects" className={classes.menuItem}>
+               <Link
+                  onClick={() => closeMenu()}
+                  href="#projects"
+                  className={classes.menuItem}
+                  to="projects"
+                  spy={false}
+                  smooth={true}
+                  duration={700}
+               >
                   <Typography variant="subtitle2" color="initial">
                      <span className={classes.number}>03. </span>
                      Projects
                   </Typography>
-               </a>
+               </Link>
             </Grid>
             <Grid
                item
                className={classNames(classes.transition, classes.increaseSize)}
             >
-               <a href="#contact" className={classes.menuItem}>
+               <Link
+                  onClick={() => closeMenu()}
+                  href="#contact"
+                  className={classes.menuItem}
+                  to="contact"
+                  spy={false}
+                  smooth={true}
+                  duration={800}
+               >
                   <Typography variant="subtitle2" color="initial">
                      <span className={classes.number}>04. </span>
                      Contact
                   </Typography>
-               </a>
+               </Link>
             </Grid>
             <Button
                className={classes.btn}

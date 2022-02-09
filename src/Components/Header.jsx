@@ -12,6 +12,7 @@ import Menu from "./Menu";
 import { useGlobalContext } from "../Context/app-context";
 import MenuIcon from "@material-ui/icons/Menu";
 import classNames from "classnames";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
    root: {
@@ -109,57 +110,73 @@ const Header = () => {
                      <Grid
                         className={classNames(classes.hdeMobile, classes.flex)}
                      >
-                        <a
+                        <Link
                            href="#about"
                            className={classNames(
                               classes.transition,
                               classes.menuItem,
                               classes.increaseSize
                            )}
+                           to="about"
+                           spy={false}
+                           smooth={true}
+                           duration={500}
                         >
                            <Typography variant="subtitle2" color="initial">
                               <span className={classes.number}>01. </span>About
                               me
                            </Typography>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                            href="#skills"
                            className={classNames(
                               classes.transition,
                               classes.increaseSize,
                               classes.menuItem
                            )}
+                           to="skills"
+                           spy={false}
+                           smooth={true}
+                           duration={600}
                         >
                            <Typography variant="subtitle2" color="initial">
                               <span className={classes.number}>02. </span>Skills
                            </Typography>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                            href="#projects"
                            className={classNames(
                               classes.transition,
                               classes.menuItem,
                               classes.increaseSize
                            )}
+                           to="projects"
+                           spy={false}
+                           smooth={true}
+                           duration={700}
                         >
                            <Typography variant="subtitle2" color="initial">
                               <span className={classes.number}>03. </span>
                               Projects
                            </Typography>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                            href="#contact"
                            className={classNames(
                               classes.transition,
                               classes.menuItem,
                               classes.increaseSize
                            )}
+                           to="contact"
+                           spy={false}
+                           smooth={true}
+                           duration={800}
                         >
                            <Typography variant="subtitle2" color="initial">
                               <span className={classes.number}>04. </span>
                               Contact
                            </Typography>
-                        </a>
+                        </Link>
                      </Grid>
                   </Grid>
                </Grid>
