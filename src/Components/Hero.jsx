@@ -39,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
    nameText: {
       color: alpha("#fff", 0.85),
    },
-
    bigText: {
       fontSize: "3rem",
       [theme.breakpoints.up("sm")]: {
@@ -48,6 +47,42 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.up("md")]: {
          fontSize: "5rem",
       },
+   },
+   "@keyframes enterLeft": {
+      "0%": {
+         opacity: 0,
+         transform: "translateX(-200%)",
+      },
+      "100%": {
+         opacity: 1,
+         transform: "translateX(0)",
+      },
+   },
+   "@keyframes enterLeft4": {
+      "0%": {
+         opacity: 0,
+         transform: "translateX(-200%)",
+      },
+      "50%": {
+         opacity: 0,
+         transform: "translateX(-200%)",
+      },
+      "100%": {
+         opacity: 1,
+         transform: "translateX(0)",
+      },
+   },
+   animation1: {
+      animation: `$enterLeft 2s ease-in-out`,
+   },
+   animation2: {
+      animation: `$enterLeft 4s ease-in-out`,
+   },
+   animation3: {
+      animation: `$enterLeft 6s ease-in-out`,
+   },
+   animation4: {
+      animation: `$enterLeft4 8s ease-in-out`,
    },
 }));
 
@@ -64,7 +99,7 @@ const Hero = () => {
          >
             <Grid item xs={12} className={classes.textContainer}>
                <Typography
-                  className={classes.greenText}
+                  className={classNames(classes.greenText, classes.animation1)}
                   variant="h6"
                   color="initial"
                >
@@ -76,14 +111,23 @@ const Hero = () => {
                   variant="h4"
                   component="h2"
                   color="initial"
-                  className={classNames(classes.nameText, classes.bigText)}
+                  className={classNames(
+                     classes.nameText,
+                     classes.bigText,
+                     classes.animation2
+                  )}
+                  id="name-text"
                >
                   Chinaemerem.
                </Typography>
             </Grid>
             <Grid item xs={12} className={classes.textContainer}>
                <Typography
-                  className={classNames(classes.bigText, classes.paleText)}
+                  className={classNames(
+                     classes.bigText,
+                     classes.paleText,
+                     classes.animation3
+                  )}
                   variant="h4"
                   color="initial"
                >
@@ -92,7 +136,7 @@ const Hero = () => {
             </Grid>
             <Grid item xs={12} sm={8} className={classes.textContainer}>
                <Typography
-                  className={classes.paleText}
+                  className={classNames(classes.animation3, classes.paleText)}
                   variant="body1"
                   component="h4"
                   color="initial"
@@ -105,7 +149,7 @@ const Hero = () => {
             </Grid>
             <Grid item xs={12} className={classes.textContainer}>
                <Button
-                  className={classes.btn}
+                  className={classNames(classes.btn, classes.animation4)}
                   variant="outlined"
                   color="secondary"
                   component="a"

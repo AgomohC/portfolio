@@ -125,7 +125,7 @@ const Projects = () => {
                      />
                      <CardContent>
                         <Typography variant="h5" className={classes.greenText}>
-                           This portfolio website
+                           My Portfolio
                         </Typography>
                         <Typography
                            className={classes.paleGreenText}
@@ -138,7 +138,7 @@ const Projects = () => {
                         <Button
                            component="a"
                            target="_blank"
-                           href="https://femto-portfolio-agomohc.vercel.app/"
+                           href="#"
                            rel="noopener noreferrer"
                            color="secondary"
                            variant="contained"

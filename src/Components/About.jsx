@@ -57,6 +57,32 @@ const useStyles = makeStyles((theme) => ({
          marginBottom: theme.spacing(6),
       },
    },
+   "@keyframes enterLeft": {
+      "0%": {
+         opacity: 0,
+         transform: "translateX(-200%)",
+      },
+      "100%": {
+         opacity: 1,
+         transform: "translateX(0)",
+      },
+   },
+   "@keyframes enterRight": {
+      "0%": {
+         opacity: 0,
+         transform: "translateX(200%)",
+      },
+      "100%": {
+         opacity: 1,
+         transform: "translateX(0)",
+      },
+   },
+   animationLeft: {
+      animation: `$enterLeft 3s ease-in-out`,
+   },
+   animationRight: {
+      // animation: `$enterRight 3s ease-in-out`,
+   },
 }));
 
 const About = () => {
@@ -78,7 +104,7 @@ const About = () => {
                <Grid className={classes.marginBottomFour} item xs={5} md={6}>
                   <div className={classes.divider}></div>
                </Grid>
-               <Grid item xs={12}>
+               <Grid item xs={12} className={classes.animationLeft}>
                   <Typography
                      className={classes.text}
                      variant="body1"
@@ -94,7 +120,7 @@ const About = () => {
                   </Typography>
                </Grid>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={4} className={classes.animationRight}>
                <div className={classes.imgContainer}>
                   <img src={meImg} className={classes.img} alt="chinaemerem" />
                </div>
