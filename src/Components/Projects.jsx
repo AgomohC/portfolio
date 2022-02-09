@@ -27,7 +27,6 @@ import markdown from "../assets/markdown.png";
 import pomodoro from "../assets/pomodoro.png";
 import tracker from "../assets/tracker.png";
 import header from "../assets/header.png";
-import tribute from "../assets/tribute.png";
 import library from "../assets/library.png";
 import issues from "../assets/issues.png";
 import drum from "../assets/drum.png";
@@ -754,49 +753,6 @@ const Projects = () => {
                            component="a"
                            target="_blank"
                            href="https://github.com/AgomohC/header-parser"
-                           rel="noopener noreferrer"
-                           color="secondary"
-                           size="small"
-                        >
-                           <GitHub />
-                        </Button>
-                     </CardActions>
-                  </Card>
-               </Grid>
-               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
-                  <Card className={classes.card}>
-                     <CardMedia
-                        className={classes.cardImg}
-                        title="Tribute Page"
-                        image={tribute}
-                     />
-                     <CardContent>
-                        <Typography variant="h5" className={classes.greenText}>
-                           Tribute Page
-                        </Typography>
-                        <Typography
-                           className={classes.paleGreenText}
-                           variant="body2"
-                        >
-                           HTML5 + CSS3
-                        </Typography>
-                     </CardContent>
-                     <CardActions className={classes.paddingTwo}>
-                        <Button
-                           component="a"
-                           target="_blank"
-                           href="https://tribute-page-eight-omega.vercel.app/"
-                           rel="noopener noreferrer"
-                           color="secondary"
-                           variant="contained"
-                           size="small"
-                        >
-                           <Link />
-                        </Button>
-                        <Button
-                           component="a"
-                           target="_blank"
-                           href="https://github.com/AgomohC/tribute-page"
                            rel="noopener noreferrer"
                            color="secondary"
                            size="small"
