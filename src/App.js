@@ -7,7 +7,7 @@ const App = () => {
          fontFamily: ["Lato", "Helvetica", "Arial", "sans-serif"].join(","),
 
          h1: {
-            fontFamily: ["Comforter", "cursive"].join(","),
+            fontFamily: ["Yellowtail", "cursive"].join(","),
             fontSize: "1.6rem",
             letterSpacing: 4,
          },

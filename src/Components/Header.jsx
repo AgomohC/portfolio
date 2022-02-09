@@ -16,9 +16,11 @@ import { Link } from "react-scroll";
 
 const useStyles = makeStyles((theme) => ({
    root: {
-      [theme.breakpoints.up("lg")]: {
-         paddingLeft: 96,
-         paddingRight: 96,
+      paddingLeft: theme.spacing(5),
+      paddingRight: theme.spacing(5),
+      [theme.breakpoints.up("sm")]: {
+         paddingLeft: theme.spacing(10),
+         paddingRight: theme.spacing(10),
       },
       position: "relative",
    },
@@ -93,7 +95,7 @@ const Header = () => {
                id="back-to-top-anchor"
                component="nav"
             >
-               <Typography variant="h1">chinaemerem</Typography>
+               <Typography variant="h1">Chinaemerem</Typography>
                <Grid container direction="row">
                   <Grid
                      item
