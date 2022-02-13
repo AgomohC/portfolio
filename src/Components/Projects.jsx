@@ -120,92 +120,6 @@ const Projects = () => {
                   <Card className={classes.card}>
                      <CardMedia
                         className={classes.cardImg}
-                        title="A Portfolio Web App"
-                        image={portFolio}
-                     />
-                     <CardContent>
-                        <Typography variant="h5" className={classes.greenText}>
-                           My Portfolio
-                        </Typography>
-                        <Typography
-                           className={classes.paleGreenText}
-                           variant="body2"
-                        >
-                           React + Context API + Material-UI
-                        </Typography>
-                     </CardContent>
-                     <CardActions className={classes.paddingTwo}>
-                        <Button
-                           component="a"
-                           target="_blank"
-                           href="#"
-                           rel="noopener noreferrer"
-                           color="secondary"
-                           variant="contained"
-                           size="small"
-                        >
-                           <Link />
-                        </Button>
-                        <Button
-                           component="a"
-                           target="_blank"
-                           href="https://github.com/AgomohC/portfolio"
-                           rel="noopener noreferrer"
-                           color="secondary"
-                           size="small"
-                        >
-                           <GitHub />
-                        </Button>
-                     </CardActions>
-                  </Card>
-               </Grid>
-               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
-                  <Card className={classes.card}>
-                     <CardMedia
-                        className={classes.cardImg}
-                        title="Random Quotes Generator"
-                        image={quotes}
-                     />
-                     <CardContent>
-                        <Typography variant="h5" className={classes.greenText}>
-                           Quotes Generator
-                        </Typography>
-                        <Typography
-                           className={classes.paleGreenText}
-                           variant="body2"
-                        >
-                           React + BootStrap
-                        </Typography>
-                     </CardContent>
-                     <CardActions className={classes.paddingTwo}>
-                        <Button
-                           component="a"
-                           target="_blank"
-                           href="https://femto-quotes-generator-2.netlify.app/"
-                           rel="noopener noreferrer"
-                           color="secondary"
-                           variant="contained"
-                           size="small"
-                        >
-                           <Link />
-                        </Button>
-                        <Button
-                           component="a"
-                           target="_blank"
-                           href="https://github.com/AgomohC/random-quotes-generator"
-                           rel="noopener noreferrer"
-                           color="secondary"
-                           size="small"
-                        >
-                           <GitHub />
-                        </Button>
-                     </CardActions>
-                  </Card>
-               </Grid>
-               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
-                  <Card className={classes.card}>
-                     <CardMedia
-                        className={classes.cardImg}
                         title="A countries app"
                         image={countries}
                      />
@@ -245,49 +159,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
-               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
-                  <Card className={classes.card}>
-                     <CardMedia
-                        className={classes.cardImg}
-                        title="landing page clone"
-                        image={landing}
-                     />
-                     <CardContent>
-                        <Typography variant="h5" className={classes.greenText}>
-                           Landing Page Clone
-                        </Typography>
-                        <Typography
-                           className={classes.paleGreenText}
-                           variant="body2"
-                        >
-                           HTML5 + CSS3 + Javascript
-                        </Typography>
-                     </CardContent>
-                     <CardActions className={classes.paddingTwo}>
-                        <Button
-                           component="a"
-                           target="_blank"
-                           href="https://orbiter-clone.vercel.app/"
-                           rel="noopener noreferrer"
-                           color="secondary"
-                           variant="contained"
-                           size="small"
-                        >
-                           <Link />
-                        </Button>
-                        <Button
-                           component="a"
-                           target="_blank"
-                           href="https://github.com/AgomohC/orbiter-clone"
-                           rel="noopener noreferrer"
-                           color="secondary"
-                           size="small"
-                        >
-                           <GitHub />
-                        </Button>
-                     </CardActions>
-                  </Card>
-               </Grid>
+
                <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
@@ -418,6 +290,7 @@ const Projects = () => {
                      </CardActions>
                   </Card>
                </Grid>
+
                <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
                   <Card className={classes.card}>
                      <CardMedia
@@ -452,6 +325,49 @@ const Projects = () => {
                            component="a"
                            target="_blank"
                            href="https://github.com/AgomohC/metric-imperial-converter"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="Random Quotes Generator"
+                        image={quotes}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Quotes Generator
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           React + BootStrap
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://femto-quotes-generator-2.netlify.app/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/random-quotes-generator"
                            rel="noopener noreferrer"
                            color="secondary"
                            size="small"
@@ -538,6 +454,49 @@ const Projects = () => {
                            component="a"
                            target="_blank"
                            href="https://github.com/AgomohC/file-metadata"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           size="small"
+                        >
+                           <GitHub />
+                        </Button>
+                     </CardActions>
+                  </Card>
+               </Grid>
+               <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
+                  <Card className={classes.card}>
+                     <CardMedia
+                        className={classes.cardImg}
+                        title="landing page clone"
+                        image={landing}
+                     />
+                     <CardContent>
+                        <Typography variant="h5" className={classes.greenText}>
+                           Landing Page Clone
+                        </Typography>
+                        <Typography
+                           className={classes.paleGreenText}
+                           variant="body2"
+                        >
+                           HTML5 + CSS3 + Javascript
+                        </Typography>
+                     </CardContent>
+                     <CardActions className={classes.paddingTwo}>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://orbiter-clone.vercel.app/"
+                           rel="noopener noreferrer"
+                           color="secondary"
+                           variant="contained"
+                           size="small"
+                        >
+                           <Link />
+                        </Button>
+                        <Button
+                           component="a"
+                           target="_blank"
+                           href="https://github.com/AgomohC/orbiter-clone"
                            rel="noopener noreferrer"
                            color="secondary"
                            size="small"
