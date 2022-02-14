@@ -12,7 +12,6 @@ import {
    Button,
 } from "@material-ui/core";
 import { Link, GitHub } from "@material-ui/icons";
-import portFolio from "../assets/portfolio.png";
 import quotes from "../assets/quotes.png";
 import countries from "../assets/countries.png";
 import landing from "../assets/landing.png";

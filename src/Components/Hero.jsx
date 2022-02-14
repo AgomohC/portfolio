@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Typography, makeStyles, Button, alpha } from "@material-ui/core";
 import classNames from "classnames";
+import cv from "../assets/cv.pdf";
 
 const useStyles = makeStyles((theme) => ({
    container: {
@@ -153,9 +154,10 @@ const Hero = () => {
                   variant="outlined"
                   color="secondary"
                   component="a"
-                  href="#"
+                  href={cv}
                   target="_blank"
                   rel="noopener noreferrer"
+                  download
                >
                   my cv
                </Button>
