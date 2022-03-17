@@ -4,7 +4,7 @@ import { useGlobalContext } from "../Context/app-context";
 import classNames from "classnames";
 import { Close } from "@material-ui/icons";
 import { Link } from "react-scroll";
-import cv from "../assets/cv.pdf";
+import cv from "../assets/chinaemerem-agomoh-cv.pdf";
 
 const useStyles = makeStyles((theme) => ({
    container: {

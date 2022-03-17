@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Typography, makeStyles, Button, alpha } from "@material-ui/core";
 import classNames from "classnames";
-import cv from "../assets/cv.pdf";
+import cv from "../assets/chinaemerem-agomoh-cv.pdf";
 
 const useStyles = makeStyles((theme) => ({
    container: {
