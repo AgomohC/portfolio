@@ -957,7 +957,7 @@ const Projects = () => {
                         <Button
                            component="a"
                            target="_blank"
-                           href="https://femto-stock-price-checker.herokuapp.com/"
+                           href="https://femto-stock-price-checker.glitch.me/"
                            rel="noopener noreferrer"
                            color="secondary"
                            variant="contained"

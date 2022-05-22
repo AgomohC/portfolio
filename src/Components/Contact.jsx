@@ -146,7 +146,7 @@ const Contact = () => {
                      <IconButton
                         color="secondary"
                         component="a"
-                        href="tel:+23481788390"
+                        href="tel:+2348121788390"
                         target="_blank"
                         rel="noopener noreferrer"
                      >
