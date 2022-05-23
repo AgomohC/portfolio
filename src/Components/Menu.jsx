@@ -4,7 +4,6 @@ import { useGlobalContext } from "../Context/app-context";
 import classNames from "classnames";
 import { Close } from "@material-ui/icons";
 import { Link } from "react-scroll";
-import cv from "../assets/chinaemerem-agomoh-cv.pdf";
 
 const useStyles = makeStyles((theme) => ({
    container: {
@@ -176,10 +175,9 @@ const Menu = () => {
                variant="outlined"
                color="secondary"
                component="a"
-               href={cv}
                target="_blank"
                rel="noopener noreferrer"
-               download
+               href="https://drive.google.com/file/d/1Ca7YUemg-4OrEBSfkvjmJz3N6AjvRXhm/view?usp=sharing"
             >
                my cv
             </Button>
