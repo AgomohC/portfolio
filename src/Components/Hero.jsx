@@ -155,7 +155,7 @@ const Hero = () => {
                   component="a"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://drive.google.com/file/d/1Ca7YUemg-4OrEBSfkvjmJz3N6AjvRXhm/view?usp=sharing"
+                  href="https://drive.google.com/open?id=1CQ55nD725O3safIOVtMZ5NR5W_Raol_h&authuser=chinaemerema%40gmail.com&usp=drive_fs"
                >
                   my cv
                </Button>
