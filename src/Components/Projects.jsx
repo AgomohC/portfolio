@@ -742,7 +742,7 @@ const Projects = () => {
                         <Button
                            component="a"
                            target="_blank"
-                           href="https://femto-issue-tracker.herokuapp.com/"
+                           href="https://broadleaf-excessive-judge.glitch.me/"
                            rel="noopener noreferrer"
                            color="secondary"
                            variant="contained"
@@ -785,7 +785,7 @@ const Projects = () => {
                         <Button
                            component="a"
                            target="_blank"
-                           href="https://femto-private-library.herokuapp.com/"
+                           href="https://secretive-flash-passbook.glitch.me/"
                            rel="noopener noreferrer"
                            color="secondary"
                            variant="contained"
@@ -871,7 +871,7 @@ const Projects = () => {
                         <Button
                            component="a"
                            target="_blank"
-                           href="https://femto-anon-messaging-api.herokuapp.com/api-docs/"
+                           href="https://femto-anon-messaging.up.railway.app/api-docs"
                            rel="noopener noreferrer"
                            color="secondary"
                            variant="contained"
