@@ -871,7 +871,7 @@ const Projects = () => {
                         <Button
                            component="a"
                            target="_blank"
-                           href="https://femto-anon-messaging.up.railway.app/api-docs"
+                           href="https://femto-anon-messaging.glitch.me/api-docs/"
                            rel="noopener noreferrer"
                            color="secondary"
                            variant="contained"
